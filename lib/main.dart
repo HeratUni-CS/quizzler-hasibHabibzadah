@@ -18,6 +18,8 @@ class Quizzler extends StatelessWidget {
     );
   }
 }
+
+
 class QuizPage extends StatefulWidget {
   @override
   _QuizPageState createState() => _QuizPageState();
@@ -49,8 +51,8 @@ class _QuizPageState extends State<QuizPage> {
         Expanded(
           child: Padding(
             padding: EdgeInsets.all(15.0),
-            child: TextButton(
-              style: TextButton.styleFrom(backgroundColor: Colors.green),
+            child: OutlinedButton(
+
               child: Text(
                 'True',
                 style: TextStyle(
@@ -67,8 +69,8 @@ class _QuizPageState extends State<QuizPage> {
         Expanded(
           child: Padding(
             padding: EdgeInsets.all(15.0),
-            child: TextButton(
-              style: TextButton.styleFrom(backgroundColor: Colors.red),
+            child: OutlinedButton(
+
               child: Text(
                 'False',
                 style: TextStyle(
@@ -82,14 +84,8 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ),
-        //TODO: Add a Row here as your score keeper
       ],
     );
   }
 }
 
-/*
-question1: 'You can lead a cow down stairs but not up stairs.', false,
-question2: 'Approximately one quarter of human bones are in the feet.', true,
-question3: 'A slug\'s blood is green.', true,
-*/
